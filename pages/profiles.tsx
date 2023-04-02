@@ -14,11 +14,15 @@ export async function getServerSideProps(context: NextPageContext) {
       },
     };
   }
+
+  return {
+    props: {},
+  };
 }
 
 const Profiles = () => {
-    const { data: user } = useCurrentUser();
-    const router = useRouter()
+  const { data: user } = useCurrentUser();
+  const router = useRouter();
 
   return (
     <div className="flex items-center h-full justify-center">
@@ -27,7 +31,7 @@ const Profiles = () => {
           Who`s watching?
         </h1>
         <div className="flex items-center justify-center gap-8 mt-10">
-          <div onClick={() => router.push('/')}>
+          <div onClick={() => router.push("/")}>
             <div className="group flex-row w-44 mx-auto">
               <div
                 className="
