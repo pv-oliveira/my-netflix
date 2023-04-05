@@ -37,8 +37,10 @@ export default function Home() {
       <Navbar />
       <Bilboard />
       <div className="pb-40">
-        <MovieList title="Sucesso" data={movies} />
-        <MovieList title="Minha Lista" data={favorites} />
+        <MovieList title="Trending Now" data={movies} />
+        {
+          favorites.length > 0 ? <MovieList title="My List" data={favorites} /> : null
+        }
       </div>
     </>
   );

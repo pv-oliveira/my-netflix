@@ -1,15 +1,9 @@
 import React, { useCallback } from 'react';
 import { useRouter } from 'next/router';
-// import { ChevronDownIcon } from '@heroicons/react/24/outline';
-// import { PlayIcon } from '@heroicons/react/24/solid';
-import { BsFillPlayFill, BsChevronDown } from "react-icons/Bs"
+import { BsFillPlayFill} from "react-icons/bs"
 import { BiChevronDown } from "react-icons/bi"
 import FavoriteButton from './FavoriteButton';
 import useInfoModalStore from '@/hooks/useInfoModal';
-
-// import { MovieInterface } from '@/types';
-// import FavoriteButton from '@/components/FavoriteButton';
-// import useInfoModalStore from '@/hooks/useInfoModalStore';
 
 interface MovieCardProps {
   data: Record<string, any>;
